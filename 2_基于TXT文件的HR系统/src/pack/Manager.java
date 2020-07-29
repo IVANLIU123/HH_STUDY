@@ -104,6 +104,11 @@ public class Manager {
 
     public void printAll(){
         Set<Student> students=database.getAll();
+        if(students==null){
+            System.out.println("结果为空");
+            return;
+        }
+
         for (Student stu:students
         ) {
             System.out.println(stu);

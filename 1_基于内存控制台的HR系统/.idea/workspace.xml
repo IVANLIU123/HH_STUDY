@@ -28,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2_基于TXT文件的HR系统" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -86,6 +86,7 @@
       <workItem from="1596009470844" duration="5201000" />
       <workItem from="1596030616771" duration="90000" />
       <workItem from="1596030757897" duration="152000" />
+      <workItem from="1596031024008" duration="12000" />
     </task>
     <servers />
   </component>
@@ -110,10 +111,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/154.-1200.1600.1160@0.0.1536.824" timestamp="1595774837082" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1596029889367">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1596031030552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/154.-1200.1600.1160@0.0.1536.824" timestamp="1596029889367" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/154.-1200.1600.1160@0.0.1536.824" timestamp="1596031030552" />
     <state width="1478" height="207" key="GridCell.Tab.0.bottom" timestamp="1596030909762">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

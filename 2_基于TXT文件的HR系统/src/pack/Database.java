@@ -14,41 +14,47 @@ public class Database {
 
     private void read() {
         byte[] temp = new byte[4 * 1024 * 1024];
+        File file = new File("data");
         BufferedInputStream bis = null;
         try {
-            bis = new BufferedInputStream(new FileInputStream("data"));
-            bis.read(temp, 0, 4 * 1024 * 1024);
-            Object ob = toObject(temp);
-            if (ob == null)//首次使用时数据文件为空
+            if(!file.exists())
+            {
+                file.createNewFile();
                 students = new HashSet<>();
-            else
-                students = (Set) ob;
-
-        } catch (FileNotFoundException e) {
+                return;
+            }
+            bis = new BufferedInputStream(new FileInputStream(file));
+            bis.read(temp, 0, 4 * 1024 * 1024);
+            students=(Set)toObject(temp);
+        } catch (
+                FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
+                if(bis!=null)
                 bis.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
     }
 
     private void write() {
-        BufferedOutputStream bos =null;
+        BufferedOutputStream bos = null;
+        File file = new File("data");
         try {
-            bos = new BufferedOutputStream(new FileOutputStream("data"));
-            bos.write(toByteArray(students), 0, 4 * 1024 * 1024);
+            bos = new BufferedOutputStream(new FileOutputStream(file));
+            byte[] temp = toByteArray(students);
+            bos.write(temp, 0, temp.length);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
                 bos.close();
             } catch (IOException e) {
